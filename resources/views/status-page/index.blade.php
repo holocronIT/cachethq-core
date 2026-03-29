@@ -5,6 +5,11 @@
         <x-cachet::status-bar />
 
         <x-cachet::about />
+
+        @if ($schedules->isNotEmpty())
+            <x-cachet::schedules :schedules="$schedules" />
+        @endif
+        
         @foreach ($componentGroups as $componentGroup)
             <x-cachet::component-group :component-group="$componentGroup" />
         @endforeach
@@ -15,10 +20,6 @@
 
         @if ($display_graphs)
         <x-cachet::metrics />
-        @endif
-
-        @if ($schedules->isNotEmpty())
-            <x-cachet::schedules :schedules="$schedules" />
         @endif
 
         <x-cachet::incident-timeline />
