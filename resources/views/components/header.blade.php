@@ -11,8 +11,12 @@
         </a>
     </div>
 
-    @if ($dashboardLoginLink)
+    
     <div class="flex items-center gap-2.5 sm:gap-5">
+         <a href="https://deepstone.app.n8n.cloud/form/eb128e0c-42bc-4c47-9ad6-60536756fe78" class="rounded-sm bg-accent px-3 py-2 text-sm font-semibold text-accent-foreground">
+            Subscribe
+        </a>
+        @if ($dashboardLoginLink)
         <a href="{{ Cachet\Cachet::dashboardPath() }}" class="rounded-sm bg-accent px-3 py-2 text-sm font-semibold text-accent-foreground">
             {{ __('filament-panels::pages/dashboard.title') }}
         </a>
@@ -25,7 +29,8 @@
             </button>
         </form>
         @endauth
+         @endif
     </div>
-    @endif
+   
 </div>
 {{ \Cachet\Facades\CachetView::renderHook(\Cachet\View\RenderHook::STATUS_PAGE_NAVIGATION_AFTER) }}
