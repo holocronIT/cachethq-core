@@ -5,8 +5,8 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <link rel="shortcut icon" href="{{ asset('vendor/cachethq/cachet/favicon.ico') }}" />
-        <link rel="apple-touch-icon" href="{{ asset('vendor/cachethq/cachet/apple-touch-icon.png') }}" />
+        <link rel="shortcut icon" href="https://deepstone-public-assets.s3.us-east-1.amazonaws.com/DeepStone_AzzurroIcon.png" />
+        <link rel="apple-touch-icon" href="https://deepstone-public-assets.s3.us-east-1.amazonaws.com/DeepStone_AzzurroIcon.png" />
 
         <title>{{ $title ?: config('cachet.title', 'Cachet') }}</title>
         <meta name="title" content="{{ $title ?: config('cachet.title', 'Cachet') }}" />
@@ -15,14 +15,14 @@
         <!-- Open Graph / Facebook -->
         <meta property="og:type" content="website" />
         <meta property="og:url" content="{{ url(Cachet::path()) }}" />
-        <meta property="og:image" content="{{ asset('/vendor/cachethq/cachet/android-chrome-512x512.png') }}" />
+        <meta property="og:image" content="https://deepstone-public-assets.s3.us-east-1.amazonaws.com/deepstone-status-page-cover.png" />
         <meta property="og:title" content="{{ $title ?: config('cachet.title', 'Cachet') }}" />
         <meta property="og:description" content="{{ $description }}" />
 
         <!-- Twitter -->
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="{{ url(Cachet::path()) }}" />
-        <meta property="twitter:image" content="{{ asset('/vendor/cachethq/cachet/android-chrome-512x512.png') }}" />
+        <meta property="twitter:image" content="https://deepstone-public-assets.s3.us-east-1.amazonaws.com/deepstone-status-page-cover.png" />
         <meta property="twitter:title" content="{{ $title ?: config('cachet.title', 'Cachet') }}" />
         <meta property="twitter:description" content="{{ $description }}" />
 
