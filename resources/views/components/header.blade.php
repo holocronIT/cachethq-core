@@ -3,7 +3,7 @@
     <div>
         <a href="{{ route('cachet.status-page') }}" class="transition hover:opacity-80">
             <img src="https://deepstone-public-assets.s3.us-east-1.amazonaws.com/logo/DeepStone_Negativo.png" alt="{{ $siteName }}" class="h-8 w-auto negative-logo" />
-            <img src="https://deepstone-public-assets.s3.us-east-1.amazonaws.com/logo/DeepStone_Positivo.png" alt="{{ $siteName }}" class="h-8 w-auto positife-logo" />
+            <img src="https://deepstone-public-assets.s3.us-east-1.amazonaws.com/logo/DeepStone_Positivo.png" alt="{{ $siteName }}" class="h-8 w-auto positive-logo" />
         </a>
     </div>
 
