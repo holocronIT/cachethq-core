@@ -9,7 +9,7 @@
 
     
     <div class="flex items-center gap-2.5 sm:gap-5">
-         <a href="https://deepstone.app.n8n.cloud/form/eb128e0c-42bc-4c47-9ad6-60536756fe78" class="rounded-sm bg-accent px-3 py-2 text-sm font-semibold text-accent-foreground">
+         <a href=https://1e2b541f.sibforms.com/serve/MUIFAFVteb30Q5StxZC5HvV9SfHSH80x1HmAruF-PXg7RG6XzJwrMbqSYCd158nUKhhBylsKv_Y6KYxNECGGGDLo5SFZmqRz3ld1IKFuETYhHY83TrG5e1SoaUWoUhOVA_gBrqcTyDYgdSSz8vp4clOf0sGQ4-KTkDNkrQFkgH0ANXAJO9_XC6v4F2tAR-WuXUeSTP43WeEAgot40Q==" target="blank" class="rounded-sm bg-accent px-3 py-2 text-sm font-semibold text-accent-foreground">
             Subscribe
         </a>
         @if ($dashboardLoginLink)
