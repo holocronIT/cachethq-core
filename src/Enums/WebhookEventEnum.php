@@ -22,4 +22,9 @@ enum WebhookEventEnum: string
     case subscriber_created = 'subscriber_created';
     case subscriber_unsubscribed = 'subscriber_unsubscribed';
     case subscriber_verified = 'subscriber_verified';
+
+    case schedule_created = 'schedule_created';
+    case schedule_updated = 'schedule_updated';
+    case schedule_deleted = 'schedule_deleted';
+    
 }
