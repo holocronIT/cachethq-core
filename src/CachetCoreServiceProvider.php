@@ -79,6 +79,7 @@ class CachetCoreServiceProvider extends ServiceProvider
             'Cachet\Events\Components\*',
             'Cachet\Events\Subscribers\*',
             'Cachet\Events\Metrics\*',
+            'Cachet\Events\Schedules\*',
         ], SendWebhookListener::class);
         Event::listen([WebhookCallSucceededEvent::class, WebhookCallFailedEvent::class], WebhookCallEventListener::class);
 
