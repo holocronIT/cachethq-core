@@ -4,6 +4,9 @@ namespace Cachet\Models;
 
 use Cachet\Database\Factories\ScheduleFactory;
 use Cachet\Enums\ScheduleStatusEnum;
+use Cachet\Events\Schedules\ScheduleCreated;
+use Cachet\Events\Schedules\ScheduleDeleted;
+use Cachet\Events\Schedules\ScheduleUpdated;
 use Cachet\QueryBuilders\ScheduleBuilder;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Casts\Attribute;
@@ -47,6 +50,13 @@ class Schedule extends Model
     protected $casts = [
         'scheduled_at' => 'datetime',
         'completed_at' => 'datetime',
+    ];
+
+    /** @var array<string, class-string> */
+    protected $dispatchesEvents = [
+        'created' => ScheduleCreated::class,
+        'deleted' => ScheduleDeleted::class,
+        'updated' => ScheduleUpdated::class,
     ];
 
     /** @var list<string> */
